@@ -7,7 +7,7 @@
     tools:context=".OnBoardingScreen01">
 
     <TextView
-        android:id="@+id/skipOnBoarding01ID"
+        android:id="@+id/skipOnBoarding02ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -33,10 +33,10 @@
         >
 
         <TextView
-            android:id="@+id/boarding01txtID"
+            android:id="@+id/boarding02txtID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/boarding01txt"
+            android:text="@string/onBoarding02txt01"
             android:textColor="#C26682"
             android:textSize="45sp"
             android:fontFamily="@font/notoseriftamil_semicondensed_semibold"
@@ -46,10 +46,10 @@
             />
 
         <TextView
-            android:id="@+id/boarding01txt2ID"
+            android:id="@+id/boarding02txt2ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/onBoarding02txt"
+            android:text="@string/onBoarding02txt02"
             android:textColor="#C26682"
             android:textSize="20sp"
             android:fontFamily="@font/notoseriftamil_regular"
@@ -57,15 +57,15 @@
             android:layout_marginTop="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/boarding01txtID"
+            app:layout_constraintTop_toBottomOf="@id/boarding02txtID"
             />
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/onBoarding01Btn"
+            android:id="@+id/onBoarding02Btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/boarding01txt2ID"
+            app:layout_constraintTop_toBottomOf="@id/boarding02txt2ID"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:text="@string/next_text"
@@ -77,8 +77,6 @@
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
