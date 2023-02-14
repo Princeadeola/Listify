@@ -2,4 +2,9 @@
     <string name="app_name">Listify</string>
     <string name="logo_text">Listify</string>
     <string name="boarding01txt">Make Baby \nShopping Lists.</string>
+    <string name="onBoarding02txt">Make lists and reminders to get your baby what he/she needs before arrival</string>
+    <string name="next_text">Next</string>
+    <string name="skip_text">Skip</string>
+    <string name="onBoarding02txt01">Manage your \nlists.</string>
+    <string name="onBoarding02txt02">Add images, edit or update your list at any time.</string>
 </resources>
