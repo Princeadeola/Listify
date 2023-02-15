@@ -12,13 +12,19 @@
         android:theme="@style/Theme.Listify"
         tools:targetApi="31">
         <activity
-            android:name=".OnBoardingScreen03"
+            android:name=".Auth.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".OnBoardingScreen02"
+            android:name=".Auth.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".OnBoardingScreen01"
+            android:name=".OnBoarding.OnBoardingScreen03"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding.OnBoardingScreen02"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding.OnBoardingScreen01"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
