@@ -7,4 +7,7 @@
     <string name="skip_text">Skip</string>
     <string name="onBoarding02txt01">Manage your \nlists.</string>
     <string name="onBoarding02txt02">Add images, edit or update your list at any time.</string>
+    <string name="delegate">Delegate</string>
+    <string name="onBoarding03txt02">Send lists and list items to your closest ones to help you shop.</string>
+    <string name="view_all_items">View all items</string>
 </resources>
