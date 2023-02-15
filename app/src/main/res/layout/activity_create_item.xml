@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateItemActivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/backIconID"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/logo_bg"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/uploadImgLayoutID"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="#EFF0F6"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backIconID"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upload"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload image"
+            android:textColor="#C26682"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/createItemLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/uploadImgLayoutID"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/nameLayoutID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/itemNameTxtLayoutID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/itemNameTxtID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name"
+                    android:textColor="#C26682"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|top"
+                    android:textColor="#FF0057"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/itemNameEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemNameTxtLayoutID"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="#A0A6A9"
+                android:hint="Diapers"
+                android:background="@drawable/new_item_edit_text_bg"
+                android:padding="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/descriptionLayoutID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/nameLayoutID">
+
+            <LinearLayout
+                android:id="@+id/descriptionTxtLayoutID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/descriptionTxtID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="#C26682"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|top"
+                    android:textColor="#FF0057"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/descriptionEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/descriptionTxtLayoutID"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:textColorHint="#A0A6A9"
+                android:hint="Kindly Purchase the Enfamil Baby formula milk for me. I attached photos and the directions for ease of purchase. Thanks"
+                android:background="@drawable/new_item_edit_text_bg"
+                android:padding="10dp"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionLayoutID"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:background="@drawable/location_bg"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                >
+
+                <ImageView
+                    android:id="@+id/locationImageID"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="#D9D9D9"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/locationTxtID"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Rowlands Gill, Newcastle-upon Tyne"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/locationImageID"
+                    />
+
+                <ImageView
+                    android:id="@+id/locationIconID"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/location_icon"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toRightOf="@id/locationTxtID"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveItemBtnIDCA"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="Save Item"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
